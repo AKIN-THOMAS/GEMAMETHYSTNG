@@ -20,6 +20,7 @@ const Main = () => {
     <>
       <home>
         <section
+          id="home"
           className={`main-section ${currentImage == 1 ? "bgImg1" : "bgImg2"}`}
         >
           <div className="main">
@@ -30,7 +31,7 @@ const Main = () => {
             <button>About Us</button>
           </div>
         </section>
-        <section>
+        <section id="about">
           <Services />
         </section>
         <section>
@@ -39,9 +40,11 @@ const Main = () => {
         <section>
           <FAQ />
         </section>
-        <Members />
+        <section id="portfolio">
+          <Members />
+        </section>
       </home>
-      <footer>
+      <footer id="contact">
         <Footer />
       </footer>
     </>

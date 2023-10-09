@@ -60,7 +60,11 @@ const NavBar = () => {
         <div className={`nav2 ${isMenuOpen ? "open" : ""}`}>
           <div className="links">{renderLinks}</div>
           <div>
-            <button className="printshop">Printshop</button>
+            <button className="printshop">
+              <Link to={"https://amethshop.brimble.app/"} target="_blank">
+                Amethshop
+              </Link>
+            </button>
           </div>
         </div>
       </header>
